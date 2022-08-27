@@ -11,13 +11,13 @@ const Box = (props) => {
         result = props.result;
     }
     return (
-    <div className={`box${result}`}>
-        <h2>{props.title}</h2> {/*속성값을 입력해야 정확하게 바꿀 수 있다.*/}
-        <h2>{props.item && props.item.name}</h2>
-        <img alt="" className="item-img" src={props.item && props.item.img} />
-        {/*props를 쓸 때 가드값(props.item)을 주의해야한다. 초기값이 불분명하면 에러가 나기 때문에 */}
-        <h3>{result}</h3>
-    </div>
+        <div className={`box${result}`}>
+            <h2>{props.title}</h2> {/*속성값을 입력해야 정확하게 바꿀 수 있다.*/}
+            <h2>{props.item && props.item.name}</h2>
+            <img alt="" className="item-img" src={props.item && props.item.img} />
+            {/*props를 쓸 때 가드값(props.item)을 주의해야한다. 초기값이 불분명하면 에러가 나기 때문에 */}
+            <h3>{result}</h3>
+        </div>
     );
 };
 
